@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var nome string
+	var idade int
+	var peso float64
+	fmt.Print("qual seu nome?")
+	fmt.Scan(&nome)
+	fmt.Print("qual sua idade?")
+	fmt.Scan(&idade)
+	fmt.Print("qual seu peso?")
+	fmt.Scan(&peso)
+	fmt.Println(nome)
+	fmt.Println(idade)
+	fmt.Println(peso)
+
+}
