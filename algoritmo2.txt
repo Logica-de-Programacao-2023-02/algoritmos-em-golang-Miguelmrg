@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var num int
+	fmt.Print("digite um número:")
+	fmt.Scan(&num)
+	fmt.Println("o dobro do número é:", num*2)
+	fmt.Println("o triplo do número é:", num*3)
+	fmt.Println("o quádruplo do número é:", num*4)
+}
