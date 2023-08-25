@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var peso float64
+	fmt.Print("digite seu peso em quilogramas: ")
+	fmt.Scan(&peso)
+
+	conv := peso * 2.2
+
+	fmt.Print("seu peso convertido para libras é: ", conv, "lbs")
+}
