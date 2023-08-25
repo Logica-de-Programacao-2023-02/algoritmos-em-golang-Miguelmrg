@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var num1, num2, num3 float64
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scanln(&num1)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scanln(&num2)
+
+	fmt.Print("Digite o terceiro número: ")
+	fmt.Scanln(&num3)
+
+	peso1 := 2.0
+	peso2 := 3.0
+	peso3 := 5.0
+
+	mediaPonderada := (num1*peso1 + num2*peso2 + num3*peso3) / (peso1 + peso2 + peso3)
+
+	fmt.Printf("a média ponderada dos números, com pesos 2, 3 e 5, respectivamente, é:", mediaPonderada)
+
+}
