@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2, num3 int
+	fmt.Print("digite um número: ")
+	fmt.Scan(&num1)
+	fmt.Print("digite outro número: ")
+	fmt.Scan(&num2)
+	fmt.Print("digite mais um número: ")
+	fmt.Scan(&num3)
+	if num1 < num2 && num1 < num3 {
+		fmt.Print("o menor número é: ", num1)
+	}
+	if num2 < num1 && num2 < num3 {
+		fmt.Print("o menor número é: ", num2)
+	}
+	if num3 < num1 && num3 < num2 {
+		fmt.Print("o menor número é: ", num3)
+	}
+}
