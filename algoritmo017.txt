@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var salario float64
+
+	fmt.Print("Digite o salário do funcionário: ")
+	fmt.Scanln(&salario)
+
+	var aumentoPercentual float64
+
+	if salario < 1000.0 {
+		aumentoPercentual = 0.10 // Aumento de 10% para salários menores que R$ 1000,00
+	} else {
+		aumentoPercentual = 0.05 // Aumento de 5% para salários maiores ou iguais a R$ 1000,00
+	}
+
+	novoSalario := salario * (1 + aumentoPercentual)
+
+	fmt.Printf("O novo salário do funcionário é: R$ %.2f\n", novoSalario)
+}
