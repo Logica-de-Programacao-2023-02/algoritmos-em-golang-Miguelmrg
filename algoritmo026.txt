@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num int
+	fmt.Print("digite um número: ")
+	fmt.Scan(&num)
+	for i := 1; i <= 10; i++ {
+		res := num * i
+		fmt.Printf("%d * %d = %d\n ", num, i, res)
+	}
+}
