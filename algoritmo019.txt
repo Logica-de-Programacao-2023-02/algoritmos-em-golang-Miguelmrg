@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2, num3 float64
+
+	fmt.Print("Digite o primeiro número real: ")
+	fmt.Scanln(&num1)
+
+	fmt.Print("Digite o segundo número real: ")
+	fmt.Scanln(&num2)
+
+	fmt.Print("Digite o terceiro número real: ")
+	fmt.Scanln(&num3)
+
+	// Ordenar os números em ordem crescente usando uma função personalizada
+	if num1 > num2 {
+		num1, num2 = num2, num1
+	}
+	if num2 > num3 {
+		num2, num3 = num3, num2
+	}
+	if num1 > num2 {
+		num1, num2 = num2, num1
+	}
+
+	fmt.Printf("Os números em ordem crescente são: %.2f, %.2f, %.2f\n", num1, num2, num3)
+}
