@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var idade int
+	fmt.Print("digite sua idade: ")
+	fmt.Scan(&idade)
+	if idade <= 9 {
+		fmt.Print("sua classificação é: mirim. ")
+	} else if idade <= 13 {
+		fmt.Print("sua classificação e: infantil.")
+	} else if idade <= 17 {
+		fmt.Print("sua classificação é: juvenil.")
+	} else if idade >= 18 {
+		fmt.Print("sua classificação é: adulto.")
+	}
+}
