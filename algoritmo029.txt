@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	fmt.Println("será feita uma média aritmética entre todos os números que forem inseridos, digite 0 para parar o processo e calculá-la.")
+	var soma, quantidade, num int
+	num = -1
+	for num != 0 {
+
+		fmt.Println("Digite um número: ")
+		fmt.Scan(&num)
+		soma += num
+		quantidade++
+	}
+	media := soma / quantidade
+	fmt.Print("A média entre os números inseridos é: ", media)
+
+}
