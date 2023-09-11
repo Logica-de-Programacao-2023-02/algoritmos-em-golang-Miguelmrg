@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero, maior int
+	maior = -1 // inicializa com um valor negativo para garantir que o primeiro número lido seja maior
+
+	fmt.Println("Digite números inteiros. Digite 0 para encerrar a entrada.")
+
+	for {
+		fmt.Print("Digite um número inteiro (ou 0 para encerrar): ")
+		fmt.Scanln(&numero)
+
+		if numero == 0 {
+			break
+		}
+
+		if numero > maior {
+			maior = numero
+		}
+	}
+
+	if maior != -1 {
+		fmt.Printf("O maior número digitado é: %d\n", maior)
+	} else {
+		fmt.Println("Nenhum número foi digitado.")
+	}
+}
